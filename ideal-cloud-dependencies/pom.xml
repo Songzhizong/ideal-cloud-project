@@ -11,4 +11,28 @@
   <artifactId>ideal-cloud-dependencies</artifactId>
   <packaging>pom</packaging>
 
+  <properties>
+    <ideal-cloud-open-platform.version>1.0.0-SNAPSHOT</ideal-cloud-open-platform.version>
+    <ideal-cloud-person.version>1.0.0-SNAPSHOT</ideal-cloud-person.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>cn.idealframework.cloud</groupId>
+        <artifactId>ideal-cloud-starter-open-platform-gateway</artifactId>
+        <version>${ideal-cloud-open-platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>cn.idealframework.cloud</groupId>
+        <artifactId>ideal-cloud-starter-open-platform-management</artifactId>
+        <version>${ideal-cloud-open-platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>cn.idealframework.cloud</groupId>
+        <artifactId>ideal-cloud-starter-person</artifactId>
+        <version>${ideal-cloud-person.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>
